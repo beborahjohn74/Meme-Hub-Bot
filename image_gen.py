@@ -10,7 +10,7 @@ import textwrap
 from io import BytesIO
 from PIL import Image, ImageDraw, ImageFont
 
-FONT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts", "DejaVuSans-Bold.ttf")
+FONT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "DejaVuSans-Bold.ttf")
 
 WIDTH, HEIGHT = 1000, 1000
 
