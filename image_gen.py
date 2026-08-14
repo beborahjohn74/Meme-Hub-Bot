@@ -4,12 +4,13 @@ Generates joke images: a colorful background + bold meme-style text rendered on 
 No paid APIs needed — backgrounds are drawn programmatically with Pillow.
 """
 
+import os
 import random
 import textwrap
 from io import BytesIO
 from PIL import Image, ImageDraw, ImageFont
 
-FONT_PATH = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+FONT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts", "DejaVuSans-Bold.ttf")
 
 WIDTH, HEIGHT = 1000, 1000
 
